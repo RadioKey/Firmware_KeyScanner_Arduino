@@ -12,10 +12,10 @@ void setup() {
 
 void loop() {
   if (switcher.available()) {
-    Serial.println(switcher.getReceivedValue());
-    Serial.println(switcher.getReceivedBitlength());
-    Serial.println(switcher.getReceivedProtocol());
-    Serial.println(switcher.getReceivedDelay());
+    Serial.println(printf("Code: %d", switcher.getReceivedValue()));
+    Serial.println(printf("Bit Length: %d", switcher.getReceivedBitlength()));
+    Serial.println(printf("Protocol: %d", switcher.getReceivedProtocol()));
+    Serial.println(printf("Delay: %d", switcher.getReceivedDelay()));
 
     switcher.resetAvailable();
   }
