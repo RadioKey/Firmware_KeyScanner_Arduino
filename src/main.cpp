@@ -6,7 +6,7 @@ RCSwitch switcher = RCSwitch();
 #define RECEIVER_INTERRUPT 0
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   switcher.enableReceive(RECEIVER_INTERRUPT);
 }
 
