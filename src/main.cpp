@@ -8,6 +8,7 @@ RCSwitch switcher = RCSwitch();
 void setup() {
   Serial.begin(115200);
   switcher.enableReceive(RECEIVER_INTERRUPT);
+  Serial.println("Waiting for codes...");
 }
 
 void loop() {
